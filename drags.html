@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Tappable</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="author" href="https://iamdustan.com"/>
+  <style>
+    @-ms-viewport { width: device-width; }
+    body {
+      background: #eee;
+    }
+    div {
+      box-sizing: border-box;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: inline-block;
+      height: 33vh;
+      padding: 3vw;
+      width: 33vw;
+      margin: 3vw;
+      -ms-touch-action: none;
+      touch-action: none;
+    }
+    #log {
+      display: block;
+      height: 5em;
+      width: auto;
+    }
+  </style>
+</head>
+<body id="body">
+  <nav>
+    <a href="./">Index</a>
+    <a href="./taps.html">Taps</a>
+  </nav>
+  <div id="log"></div>
+  <div id="draggable" tabindex=0>Drag me about!</div>
+  <script async src="drags.js"></script>
+</body>
+</html>
+
+

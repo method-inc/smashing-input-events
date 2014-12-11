@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Tappable</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="author" href="https://iamdustan.com"/>
+  <style>
+    body {
+      background: #eee;
+    }
+    div {
+      box-sizing: border-box;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: inline-block;
+      vertical-align: top;
+      height: 33vh;
+      padding: 3vw;
+      width: 43vw;
+      margin: 2vw;
+    }
+    div p {
+      font-size: 0.91666em;
+    }
+    #output {
+      background: #fff;
+      border: 1px solid #ddd;
+      margin: 2vw;
+      padding: 0.666em;
+      height: 50vh;
+      overflow: auto;
+    }
+    #output li {
+      list-style: none;
+    }
+    #output strong {
+      display: inline-block;
+      width: 5em;
+    }
+  </style>
+</head>
+<body id="body">
+  <nav>
+    <a href="./">Index</a>
+    <a href="./drags.html">Drags</a>
+  </nav>
+  <div id="tappable" tabindex=0>Tap.
+    <p>Use JS to manage `tap` intent and fire as soon as possible.</p>
+  </div>
+  <div id="clickable" tabindex=0>Click.
+    <p>Bind to touch and pointer start events to track time from intent start to browser action.</p>
+  </div>
+  <ul id="output"></ul>
+  <script async src="taps.js"></script>
+</body>
+</html>
+
